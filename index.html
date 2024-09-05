@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        function mostrarMensaje(event) {
+            event.preventDefault(); 
+
+            var nombre = document.getElementById('nombre').value;
+            var contraseña = document.getElementById('contraseña').value;
+
+            
+            alert('¡Has iniciado sesión exitosamente, ' + nombre + '!');
+
+            
+        }
+    </script>
+</head>
+<body>
+   <div class="container mlogin">
+        <div id="login">
+            <h1>Login de Usuario</h1>
+            <form name="loginform" id="loginform" onsubmit="mostrarMensaje(event)">
+                <p>
+                    <label for="user_login">Nombre<br/>
+                    <input type="text" name="nombre" id="nombre" class="input" value="" size="32"/></label>
+                </p>
+                <p>
+                    <label for="user_pass">Contraseña<br/>
+                    <input type="password" name="contraseña" id="contraseña" class="input" value="" size="32"/></label>
+                </p>
+                <p class="submit">
+                    <input type="submit" name="login" class="button" value="Entrar"/>
+                </p>
+                <p class="regtext">No estás registrado ?<a href="./register.html">Registrarse Aquí</a></p>
+            </form>
+        </div>
+   </div>
+</body>
+</html>
