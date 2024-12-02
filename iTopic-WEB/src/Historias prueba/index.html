@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITopic Historias Deslizables</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">itopic</div>
+        <div class="user-icon">
+            <img src="img/IIIMG.jpeg" alt="Usuario" class="icon">
+            <span>Carlos Slim</span>
+        </div>
+    </div>
+
+    <!-- Contenedor de miniaturas rectangulares -->
+    <div class="thumbnails-container" id="thumbnailsContainer">
+        <div class="thumbnail" data-index="0">
+            <img src="img/IIIMG.jpeg" alt="Historia 1">
+        </div>
+        <div class="thumbnail" data-index="1">
+            <img src="img/IMG22.jpeg" alt="Historia 2">
+        </div>
+        <div class="thumbnail" data-index="2">
+            <img src="img/Img333.jpeg" alt="Historia 3">
+        </div>
+        <div class="thumbnail" data-index="3">
+            <img src="img/IMGGG.jpeg" alt="Historia 4">
+        </div>
+    </div>
+
+    <!-- Historias deslizables (oculto hasta que se hace clic) -->
+    <div class="stories-slider" id="storiesSlider">
+        <!-- Botón de cierre -->
+        <button class="close-btn" id="closeBtn">X</button>
+        
+        <!-- Imágenes del deslizador -->
+        <div class="story" id="story1">
+            <img src="img/IIIMG.jpeg" alt="Historia 1">
+        </div>
+        <div class="story" id="story2">
+            <img src="img/IMG22.jpeg" alt="Historia 2">
+        </div>
+        <div class="story" id="story3">
+            <img src="img/Img333.jpeg" alt="Historia 3">
+        </div>
+        <div class="story" id="story4">
+            <img src="img/IMGGG.jpeg" alt="Historia 4">
+        </div>
+    </div>
+
+    <!-- Controles para avanzar o retroceder -->
+    <div class="slider-controls" id="sliderControls">
+        <button id="prev-btn" class="control-btn">⬅️</button>
+        <button id="next-btn" class="control-btn">➡️</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

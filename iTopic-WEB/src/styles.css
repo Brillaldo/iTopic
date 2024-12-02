@@ -1,0 +1,106 @@
+/* Configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Main Section */
+.main-section {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Secciones de contenido */
+.stories-section,
+.new-post-section,
+.map-section,
+.ranked-general {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ranked-general h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ranked-general ul {
+    list-style: none;
+}
+
+.ranked-general li {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Botón general */
+.button {
+    background-color: #000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #444;
+}
+
+/* Animación hover */
+
+.profile-section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}

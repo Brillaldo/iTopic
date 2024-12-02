@@ -1,0 +1,143 @@
+/* Estilos básicos */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+/* Encabezado con logo y usuario */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #000;
+}
+
+.logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 28px;
+    color: white;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.user-icon span {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Miniaturas rectangulares */
+.thumbnails-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #777;
+    box-shadow: 0 0 15px 5px rgba(119, 119, 119, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 0 20px 10px rgba(119, 119, 119, 0.8);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Historias deslizables (inicialmente ocultas) */
+.stories-slider {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.5s ease;
+}
+
+/* Botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 102;
+}
+
+/* Estilos de las imágenes del deslizador */
+.story {
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    border: 3px solid #777;
+    box-shadow: 0 0 25px 10px rgba(119, 119, 119, 0.5);
+}
+
+/* Controles del slider */
+.slider-controls {
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 101;
+}
+
+.control-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.control-btn:active {
+    background-color: #777;
+}

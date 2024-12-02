@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  itopic-sql:
+    image: mysql:latest
+    environment: 
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: miprimerabd
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: 12345
+    ports:
+      - "9090:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+
+  php-apache:
+    image: php:7.4-apache
+    container_name: apache-sv
+    ports:
+      - "80:80"
+    volumes: 
+      - ./src:/var/www/html
+      

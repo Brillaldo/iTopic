@@ -1,0 +1,143 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background: #1a1a1a; /* Fondo oscuro */
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Formulario */
+.form {
+    background: #333; /* Fondo gris oscuro */
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.5); /* Sombra oscura */
+}
+
+.tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tab-group li {
+    float: left;
+    width: 50%;
+}
+
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: #444; /* Fondo gris medio */
+    color: #fff; /* Texto blanco */
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.tab-group .active a {
+    background: #000; /* Fondo negro */
+    color: #ffffff;
+}
+
+.tab-content > div {
+    display: none;
+}
+
+.tab-content > div:last-child {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* Texto blanco */
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.6); /* Texto gris claro */
+    transition: all 0.25s ease;
+    font-size: 22px;
+    pointer-events: none; /* Evita que el label interfiera */
+}
+
+label.hidden {
+    display: none; /* Ocultar label cuando el input tiene texto */
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+input {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #222; /* Fondo gris oscuro para inputs */
+    border: 1px solid #555; /* Borde gris medio */
+    color: #ffffff; /* Texto blanco */
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+input:focus {
+    outline: 0;
+    border-color: #ffffff; /* Borde blanco al enfocar */
+}
+
+.button {
+    border: 0;
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    transition: all 0.5s ease;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.forgot a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot a:hover {
+    color: #ccc; /* Gris claro al pasar el ratón */
+}
